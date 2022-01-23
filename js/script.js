@@ -1,16 +1,15 @@
 function myFunction() {
-    document.getElementById('myDropdowns').classList.toggle('show');
+    document.getElementById('myDropdown').classList.toggle("show")
 }
 window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
-        let dropdown = document.getElementsByClassName("dropdown-content");
-        let i;
-        for (i = 0; 1 < dropdowns.length; i++) {
-            let openDropdown = dropdown[i];
+        let dropdowns = document.createElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
             if (openDropdown.classList.contains('show')) {
                 openDropdown.classList.remove('show');
             }
-
         }
     }
 }
