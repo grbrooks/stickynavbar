@@ -3,7 +3,7 @@ function myFunction() {
 }
 window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
-        let dropdowns = document.createElementsByClassName("dropdown-content");
+        let dropdowns = document.getElementsByClassName("dropdown-content");
         var i;
         for (i = 0; i < dropdowns.length; i++) {
             var openDropdown = dropdowns[i];
